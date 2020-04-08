@@ -1,9 +1,12 @@
 spring:
   mqtt:
-    username: admin
-    mqpassword: admin
-    host-url: tcp://ip:port
-    client-id: zhjsbackground${random.value}
-    default-topic: $SYS/brokers/+/clients/#
-    completionTimeout: 3000
-    keepAlive: 60
+    username: admin                           #账户
+    password: public                          #密码
+    host-url: tcp://192.168.141.129:1883      #MQTT-服务器连接地址
+    client-id: my_springboot_mqtt_producer    #MQTT-连接服务器默认客户端ID, 每个客户端启动的id要不同
+    default-topic: springboot_topic           #MQTT-默认的消息推送主题，实际可在调用接口时指定
+    timeout: 10                              #超时时间 单位/s
+    keepAlive: 20                             #心跳的间隔
+
+server:
+  port: 8081
