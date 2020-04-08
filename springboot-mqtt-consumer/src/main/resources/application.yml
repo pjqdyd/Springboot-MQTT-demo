@@ -1,0 +1,9 @@
+spring:
+  mqtt:
+    username: admin
+    mqpassword: admin
+    host-url: tcp://ip:port
+    client-id: zhjsbackground${random.value}
+    default-topic: $SYS/brokers/+/clients/#
+    completionTimeout: 3000
+    keepAlive: 60
