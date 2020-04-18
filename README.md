@@ -16,6 +16,6 @@
     2.配置yml文件, 运行生产者模块
     3.配置yml文件, 运行消费者模块
     4.访问生产者的http://localhost:8080/push/hello发送一条消息
-    5.生产者打印接收到的消息
+    5.消费者打印接收到的消息
 
 参考: [EMQTT官方文档](https://www.emqx.io/cn/)
